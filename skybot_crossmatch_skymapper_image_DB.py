@@ -47,7 +47,7 @@ def main(ifile=SKYMAPPER_IMAGE_CATALOGUE):
 
 
     # convert some key fields to astropy ecosystem objects
-    skymapper_images['MJD'] = Time(skymapper_images['date'], format='mjd')# + TimeDelta(skymapper_images["exp_time"]*u.second)/2
+    skymapper_images['MJD'] = Time(skymapper_images['date'], format='mjd') + TimeDelta(skymapper_images["exp_time"]*u.second)/2
     skymapper_images['skycoord'] = SkyCoord(ra=skymapper_images['ra']*u.rad,
                                         dec=skymapper_images['dcl']*u.rad)
     
