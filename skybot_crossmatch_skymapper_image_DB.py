@@ -24,7 +24,7 @@ __version__ = "1.0"
 MAG_CUT_SAFETY_TERM = 3 * u.mag
 
 SKYMAPPER_FOV = 1.8 * u.degree # fov radius
-SKYMAPPER_MPC_CODE = 260 # technically wrong: 260 = Siding Spring DSS
+SKYMAPPER_MPC_CODE = Q61 # technically wrong: 260 = Siding Spring DSS, Q61 = PROMPT, Siding Spring
 
 # image pointing catalogue
 SKYMAPPER_IMAGE_CATALOGUE = 'data/skymapper_DR3_image_table_prerelease.csv'
